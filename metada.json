@@ -13,7 +13,7 @@
 			{
 				"kind": "main",
 				"tag": "com-sap-sample-helloworld1",
-				"url": " https://fabiopereira123.github.io/SACC//webcomponent.js",
+				"url": " https://fabiopereira123.github.io/SACC/webcomponent.js",
 				"integrity": "",
 				"ignoreIntegrity" : true
 			}
