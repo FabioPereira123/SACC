@@ -18,7 +18,7 @@
         },
 		{
 			"kind": "styling",
-			"tag": "com-sap-sample-helloworld3-aps",
+			"tag": "com-sap-sample-helloworld4-aps",
             "url": "https://fabiopereira123.github.io/SACC/aps_webcomponent.js",
 			"integrity": "",
             "ignoreIntegrity" : true
@@ -29,6 +29,11 @@
 			"type": "string",
 			"description": "The heading level of the widget; h1-h3. Default is h1.",
 			"default" : "h1"
+		},
+		"widgetText": {
+			"type": "string",
+			"description": "The text to be displayed in the widget",
+			"default" : "Hello World"
 		}
 	},
 	"methods": {
