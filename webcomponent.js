@@ -2,7 +2,7 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = ` `;
 
-    customElements.define('com-sap-sample-helloworld2', class Helloworld2 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld2', class helloworld2 extends HTMLElement {
 
 
 		constructor() {
