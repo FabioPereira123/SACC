@@ -2,7 +2,7 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = ` `;
 
-    customElements.define('com-sap-sample-helloworld2', class helloworld2 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld3', class helloworld3 extends HTMLElement {
 
 
 		constructor() {
@@ -45,6 +45,15 @@
         onCustomWidgetResize(width, height){
         }
         */
+
+//Getters and Setters
+get widgetText() {
+    return this._tagType;
+}
+
+set widgetText(value) {
+    this._tagText = value;
+}
 
         redraw(){
             if (this._tagText != null){
