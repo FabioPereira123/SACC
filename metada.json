@@ -49,13 +49,11 @@
 			"description": "Update the hX tag of the KPI field to h3",
 			"body": "this.headingType = 'h3';"
 		},
-
 		"getH": {
 			"description": "Get the hX tag of the KPI field",
 			"body": "return this.headingType;",
 			"returnType": "string"
-		}, 
-
+		},
 		"setText": {
 			"description": "Set the text value of the widget",
 			"parameters": [
@@ -67,8 +65,7 @@
 			],
 			"body": "this.widgetText = newTextValue;"
 		}
-
-	
+			
 	},
 	"events": {
 	}
