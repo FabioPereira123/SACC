@@ -1,6 +1,6 @@
 
 	{
-		"name": "Hello World Step 2",
+		"name": "Hello World Step 4",
 	"description": "The first step in creating a minamilistic KPI tile",
 	"eula": "",
 	"vendor": "",
@@ -19,7 +19,7 @@
 			}
 
 
-			{
+			,{
 				"kind": "styling",
 				"tag": "com-sap-sample-helloworld3-aps",
 				"url": "https://fabiopereira123.github.io/SACC/aps_webcomponent.js",
