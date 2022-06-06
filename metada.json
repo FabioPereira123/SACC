@@ -1,6 +1,8 @@
+
+
 {
 	"name": "Hello World Step 4",
-	"description": "The first step in creating a minamilistic KPI tile.  Now with properties",
+	"description": "Part of the hello world custom widget tutorial for SAC.  Now with a script API",
 	"eula": "",
 	"vendor": "",
 	"license": "",
@@ -19,7 +21,7 @@
 		{
 			"kind": "styling",
 			"tag": "com-sap-sample-helloworld4-aps",
-            "url": "https://fabiopereira123.github.io/SACC/aps_webcomponent.js",
+            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_4/aps_webcomponent.js",
 			"integrity": "",
             "ignoreIntegrity" : true
 		}
