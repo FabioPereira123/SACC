@@ -30,7 +30,7 @@
 		],
 		"properties": {
 			"widgetText": {
-				"type": "string",
+				"type": "string[]",
 				"description": "The text to be displayed in the widget",
 				"default" : "Hello World"
 			}
