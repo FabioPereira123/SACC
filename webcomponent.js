@@ -1,8 +1,8 @@
 (function()  {
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = ``;
+    tmpl.innerHTML = ` `;
 
-    customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld2', class Helloworld2 extends HTMLElement {
 
 
 		constructor() {
