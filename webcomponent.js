@@ -1,98 +1,173 @@
+var getScriptPromisify =(src) =>{
+return new Promise(resolve =>{
+$.getScript(src,resolve)
+
+})
+
+}
+
+
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-    `;
-
-    customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
+<style> 
 
 
+</style>
+<div id="root" style="width :100%; height:100%;"> </div>
+    `
+
+
+
+
+   class HelloWorldAps extends HTMLElement {
 		constructor() {
-			super(); 
+			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
-            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this._firstConnection = false;
-            this._tagContainer;
-            this._tagType = "h1";
-            this._tagText = "Hello World";
 
-            //Adding event handler for click events
-			this.addEventListener("click", event => {
-				var event = new Event("onClick");
-				this.dispatchEvent(event);
-            });
+
+			this._shadowRoot.appendChild(template.content.cloneNode(true));
+
+
+
+		this._root = this._shadowRoot.getElementById('root');
+        
+        this._props ={};
+
+		this.render();
 		}
 
-        //Fired when the widget is added to the html DOM of the page
-        connectedCallback(){
-            this._firstConnection = true;
-            this.redraw(); 
-        }
+		onCostumWidgetResize(width,height){
 
-         //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
-        disconnectedCallback(){
-        
-        }
-
-         //When the custom widget is updated, the Custom Widget SDK framework executes this function first
-		onCustomWidgetBeforeUpdate(oChangedProperties) {
+this.render();
 
 		}
 
-        //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
-		onCustomWidgetAfterUpdate(oChangedProperties) {
-            if (this._firstConnection){
-                this.redraw();
-            }
-        }
-        
-        //When the custom widget is removed from the canvas or the analytic application is closed
-        onCustomWidgetDestroy(){
-        
-        }
+		async render(value){
 
-        
-        //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
-        // Commented out by default
-        /*
-        onCustomWidgetResize(width, height){
-        
-        }
-        */
+			await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
+		
 
-        //Getters and Setters
-        get widgetText() {
-            return this._tagType;
-        }
-
-        set widgetText(value) {
-            this._tagText = value;
-        }
+		const   chart= echarts.init(this._root,'dark')
+		  
+		  
+const option ={
 
 
-        get headingType() {
-            return this._tagType;
-            }
+series: [{
 
-        set headingType(value) {
-            this._tagType = value;
-        }
+type:'gauge',
+center: ["50%","60%"],
+startAngle:200,
+endAngle:-20,
+min:0,
+max:60,
+splitNumber:12,
+itemStyle:{
+color:'#FFAB91'	
+},
 
-        // End - Getters and Setters
+progress:{
 
-        redraw(){
-            if (this._tagContainer){
-                this._tagContainer.parentNode.removeChild(this._tagContainer);
-            }
+show:true,
+width:30
 
-            var shadow = window.getSelection(this._shadowRoot);
-            this._tagContainer = document.createElement(this._tagType);
-            var theText = document.createTextNode(this._tagText);    
-            this._tagContainer.appendChild(theText); 
-            this._shadowRoot.appendChild(this._tagContainer);
+},
 
-        }
-    
-    
-    });
-        
-})();
+pointer:{
+show:false,
+
+},
+
+axisLine:{
+lineStyle:{
+width:30
+
+}
+
+},
+
+axisTick:{
+
+distance:-45,
+splitNumber:5,
+lineStyle:{
+
+	width:2,
+	color:'#999'
+	
+	}
+
+
+},
+
+SplitLine:{
+
+distance:-52,
+length:14,
+lineStyle:{
+
+	width:3,
+	color:'#999'
+	
+	}
+
+},
+axisLabel:{
+distance:-20,
+color:'#999',
+fontSize:20
+
+},
+
+anchor:{
+
+show:false
+},
+
+title:{
+
+	show:false
+	},
+
+	detail:{
+
+		valueAnimation:true,
+		width:'60%',
+		lineHeight:40,
+		height:'15%',
+		borderRadius:8,
+		offsetCenter:[0,'-15%'],
+		fontSize:60,
+		fontWeight:'bolder',
+		formatter:'${value}',
+		color:'auto'
+
+
+
+	},
+	data: [{
+value:value?value:0
+
+	}]
+
+
+
+
+}
+],
+};
+
+
+
+
+
+
+chart.setOption(option)
+}
+   }
+customElements.define('com-sap-sample-helloworld5',HelloWorldAps)
+
+
+
+})()
