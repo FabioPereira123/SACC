@@ -12,7 +12,7 @@
 	  {
 		"kind": "main",
 		"tag": "com-sap-sample-echarts-gauge",
-		"url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
+		"url": "https://fabiopereira123.github.io/SACC/echart/webcomponent.js",
 		"integrity": "",
 		"ignoreIntegrity": true
 	  }
