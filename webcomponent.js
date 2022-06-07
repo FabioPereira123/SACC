@@ -166,7 +166,7 @@ value:value?value:0
 chart.setOption(option)
 }
    }
-customElements.define('com-sap-sample-helloworld5',HelloWorldAps)
+customElements.define('com-sap-sample-helloworld6',HelloWorldAps)
 
 
 
