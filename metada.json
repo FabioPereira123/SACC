@@ -5,7 +5,7 @@
 	"name": "Colored Box2 ",
 	"description": "A colored box2",
 	"newInstancePrefix": "AColoredBox",
-	"icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
+	
 	"vendor": "SAP",
 	"eula": "",
 	"license": "",
