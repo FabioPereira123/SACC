@@ -97,7 +97,7 @@ var getScriptPromisify = (src) => {
 					  offsetCenter: [0, '-15%'],
 					  fontSize: 60,
 					  fontWeight: 'bolder',
-					  formatter: ' {value}',
+				
 					  color: 'auto'
 				  },
 				  data: [{
