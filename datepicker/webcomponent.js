@@ -1,7 +1,7 @@
 (function () {
     let version = "2.4.0";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://widgets.nkappler.de/datepicker/releases/2.4.0/light.css"/>`;
+    tmpl.innerHTML = ``;
 
     class DatePicker extends HTMLElement {
         constructor() {
@@ -12,7 +12,7 @@
 
         async checkForUpdates() {
             try {
-                const contribution = await (await fetch("https://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
+                const contribution = await (await fetch("https://fabiopereira123.github.io/SACC/datepicker/datepicker.json")).json();
                 if (contribution.version > version) {
                     console.log("A newer version of the Datepicker Custom Widget is available. Please contact your system administrator");
                 }
@@ -73,7 +73,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", "https://widgets.nkappler.de/datepicker/releases/2.4.0/" +
+            this.querySelector("link").setAttribute("href", "https://fabiopereira123.github.io/SACC/datepicker/" +
                 (value ? "dark.css" : "light.css")
             );
         }
