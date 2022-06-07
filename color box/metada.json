@@ -13,21 +13,21 @@
 	{	
 	"kind": "main",
 	"tag": "com-sap-sample-coloredboxa",
-	"url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
+	"url": "https://fabiopereira123.github.io/SACC/color box/webcomponent.js",
 	"integrity": "",
 	"ignoreIntegrity": true
 	},
 	{
 	"kind": "styling",
 	"tag": "com-sap-sample-coloredbox-stylinga",
-	"url": "https://fabiopereira123.github.io/SACC/styling.js",
+	"url": "https://fabiopereira123.github.io/SACC/color box/styling.js",
 	"integrity": "",
 	"ignoreIntegrity": true
 	},
 	{
 	"kind": "builder",
 	"tag": "com-sap-sample-coloredbox-builder",
-	"url": "https://fabiopereira123.github.io/SACC/builder.js",
+	"url": "https://fabiopereira123.github.io/SACC/color box/builder.js",
 	"integrity": "",
 	"ignoreIntegrity": true
 	}
