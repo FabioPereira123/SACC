@@ -10,7 +10,7 @@
 	"eula": "",
 	"license": "",
 	"webcomponents": [
-	{
+	{	
 	"kind": "main",
 	"tag": "com-sap-sample-coloredbox",
 	"url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
@@ -32,6 +32,7 @@
 	"ignoreIntegrity": true
 	}
 	],
+	
 	"properties": {
 	"color": {
 	"type": "string",
@@ -45,11 +46,11 @@
 	},
 	"width": {
 	"type": "integer",
-	"default": 100
+	"default": 200
 	},
 	"height": {
 	"type": "integer",
-	"default": 100
+	"default": 120
 	}
 	},
 	"methods": {
