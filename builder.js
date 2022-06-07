@@ -6,16 +6,22 @@
 	<legend>Colored Box Properties</legend>
 	<table>
 	<tr>
-	<td>Color</td>
-	<td><input id="styling_color" type="text" size="40" 
-   maxlength="40"></td>
+	<td>Opacity</td>
+	<td><input id="builder_opacity" type="text" size="5" 
+   maxlength="5"></td>
 	</tr>
 	</table>
 	<input type="submit" style="display:none;">
 	</fieldset>
 	</form>
+	<style>
+	:host {
+	display: block;
+	padding: 1em 1em 1em 1em;
+	}
+	</style>
 	`;
-	class ColoredBoxStylingPanel extends HTMLElement {
+	class ColoredBoxBuilderPanel extends HTMLElement {
 	constructor() {
 	super();
 	this._shadowRoot = this.attachShadow({mode: "open"});
@@ -29,18 +35,20 @@
 	this.dispatchEvent(new CustomEvent("propertiesChanged", {
 	detail: {
 	properties: {
-	color: this.color
+	opacity: this.opacity
 	}
 	}
 	}));
 	}
-	set color(newColor) {
-	this._shadowRoot.getElementById("styling_color").value = newColor;
+	set opacity(newOpacity) {
+	this._shadowRoot.getElementById("builder_opacity").value = 
+   newOpacity;
 	}
-	get color() {
-	return this._shadowRoot.getElementById("styling_color").value;
+	get opacity() {
+	return this._shadowRoot.getElementById("builder_opacity").value;
 	}
 	}
-   customElements.define("com-sap-sample-coloredbox-stylinga", 
-   ColoredBoxStylingPanel)
-})();
+	customElements.define("com-sap-sample-coloredbox-buildera", 
+   ColoredBoxBuilderPanel);
+   })();
+   
