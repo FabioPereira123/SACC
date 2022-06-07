@@ -27,7 +27,7 @@
 	{
 	"kind": "builder",
 	"tag": "com-sap-sample-coloredbox-builder",
-	"url": "https://fabiopereira123.github.io/SACC/builder.jsa",
+	"url": "https://fabiopereira123.github.io/SACC/builder.js",
 	"integrity": "",
 	"ignoreIntegrity": true
 	}
