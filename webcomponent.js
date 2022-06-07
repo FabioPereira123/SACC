@@ -7,20 +7,27 @@
 
 
 		constructor() {
-            super(); 
-            this._shadowRoot = this.attachShadow({mode: "open"});
+			super(); 
+			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "Hello World";
-        }
-        
+
+            //Adding event handler for click events
+			this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+            });
+		}
+
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
             this._firstConnection = true;
             this.redraw(); 
         }
+
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
         disconnectedCallback(){
         

@@ -1,7 +1,6 @@
 
-
 {
-	"name": "Hello World Step 4",
+	"name": "Hello World Step 5",
 	"description": "Part of the hello world custom widget tutorial for SAC.  Now with a script API",
 	"eula": "",
 	"vendor": "",
@@ -14,14 +13,14 @@
         {
 			"kind": "main",
 			"tag": "com-sap-sample-helloworld5",
-            "url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
+            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_5/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         },
 		{
 			"kind": "styling",
 			"tag": "com-sap-sample-helloworld5-aps",
-            "url": "https://fabiopereira123.github.io/SACC/aps_webcomponent.js",
+            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_5/aps_webcomponent.js",
 			"integrity": "",
             "ignoreIntegrity" : true
 		}
@@ -66,11 +65,12 @@
 				}
 			],
 			"body": "this.widgetText = newTextValue;"
-		}
+			}
 			
 	},
-	"events": { "onClick": {
-        "description": "Called when the user clicks the Gauge"
-    }
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Gauge"
+		}
 	}
 }
