@@ -1,7 +1,7 @@
 (function () {
     let version = "2.4.0";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = ``;
+    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://fabiopereira123.github.io/SACC/datepicker/light.css"/>`;
 
     class DatePicker extends HTMLElement {
         constructor() {
@@ -72,8 +72,11 @@
             this.DP.setDisplayFormat(value);
         }
 
-       
-        
+        set darktheme(value) {
+            this.querySelector("link").setAttribute("href", "https://fabiopereira123.github.io/SACC/datepicker/" +
+                (value ? "dark.css" : "light.css")
+            );
+        }
 
         set enablerange(value) {
             if (value == undefined || !this.DP) return;
