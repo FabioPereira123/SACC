@@ -1,9 +1,9 @@
 
 {
 	"id": "com.sap.sample.coloredbox",
-	"version": "1.0.0",
-	"name": "Colored Box",
-	"description": "A colored box",
+	"version": "1.0.1",
+	"name": "Colored Box2 ",
+	"description": "A colored box2",
 	"newInstancePrefix": "ColoredBox",
 	"icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
 	"vendor": "SAP",
