@@ -1,10 +1,10 @@
 
 {
-	"id": "com.sap.sample.coloredbox",
-	"version": "1.0.1",
+	"id": "com.sap.sample.coloredboxa",
+	"version": "2.0.1",
 	"name": "Colored Box2 ",
 	"description": "A colored box2",
-	"newInstancePrefix": "ColoredBox",
+	"newInstancePrefix": "AColoredBox",
 	"icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
 	"vendor": "SAP",
 	"eula": "",
@@ -12,14 +12,14 @@
 	"webcomponents": [
 	{	
 	"kind": "main",
-	"tag": "com-sap-sample-coloredbox",
+	"tag": "com-sap-sample-coloredboxa",
 	"url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
 	"integrity": "",
 	"ignoreIntegrity": true
 	},
 	{
 	"kind": "styling",
-	"tag": "com-sap-sample-coloredbox-styling",
+	"tag": "com-sap-sample-coloredbox-stylinga",
 	"url": "https://fabiopereira123.github.io/SACC/styling.js",
 	"integrity": "",
 	"ignoreIntegrity": true
@@ -27,7 +27,7 @@
 	{
 	"kind": "builder",
 	"tag": "com-sap-sample-coloredbox-builder",
-	"url": "https://fabiopereira123.github.io/SACC/builder.js",
+	"url": "https://fabiopereira123.github.io/SACC/builder.jsa",
 	"integrity": "",
 	"ignoreIntegrity": true
 	}
