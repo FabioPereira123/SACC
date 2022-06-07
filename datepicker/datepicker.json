@@ -12,14 +12,14 @@
 		{
 			"kind": "main",
 			"tag": "nkappler-date-picker",
-			"url": "webcomponent.js",
-			"integrity": "sha256-9MgyPpg9G9x7XaLdnAZ3C+WRz4cx4TsGU8zqHG8c5Do="
+			"url": "https://fabiopereira123.github.io/SACC/datepicker/webcomponent.js",
+			"integrity": "true"
 		},
 		{
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
 			"url": "https://fabiopereira123.github.io/SACC/datepicker/aps_webcomponent.js",
-			"integrity": "sha256-6MYNO1naW//DpyKcy3bFp2P6AVhATfZAhe+t4cxWzaU="
+			"integrity": "true"
 		}
 	],
 	"properties": {

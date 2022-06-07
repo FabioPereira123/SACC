@@ -176,7 +176,7 @@
                 detail: {
                     properties: {
                         format: this.format,
-                        darktheme: this.darktheme,
+                     
                         enablerange: this.enablerange,
                         minDateVal: this.minDateVal,
                         maxDateVal: this.maxDateVal
@@ -194,13 +194,7 @@
             this.querySelector("option[name='aps_format'][value='" + value + "']").checked = "checked";
         }
 
-        get darktheme() {
-            return this.querySelector("#theme").checked;
-        }
-
-        set darktheme(value) {
-            this.querySelector("#theme").checked = value
-        }
+       
 
         get enablerange() {
             return this.querySelector("#range").checked;

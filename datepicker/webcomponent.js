@@ -72,11 +72,8 @@
             this.DP.setDisplayFormat(value);
         }
 
-        set darktheme(value) {
-            this.querySelector("link").setAttribute("href", "https://fabiopereira123.github.io/SACC/datepicker/" +
-                (value ? "dark.css" : "light.css")
-            );
-        }
+       
+        
 
         set enablerange(value) {
             if (value == undefined || !this.DP) return;
