@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld4', class HelloWorld extends HTMLElement {
 
 
 		constructor() {
@@ -14,12 +14,6 @@
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "Hello World";
-
-            //Adding event handler for click events
-			this.addEventListener("click", event => {
-				var event = new Event("onClick");
-				this.dispatchEvent(event);
-            });
 		}
 
         //Fired when the widget is added to the html DOM of the page
