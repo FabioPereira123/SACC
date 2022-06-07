@@ -13,14 +13,14 @@
         {
 			"kind": "main",
 			"tag": "com-sap-sample-helloworld5",
-            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_5/webcomponent.js",
+			"url": "https://fabiopereira123.github.io/SACC/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         },
 		{
 			"kind": "styling",
 			"tag": "com-sap-sample-helloworld5-aps",
-            "url": "https://davidhstocker.github.io/SAC_CustomWidget_HelloWorld_5/aps_webcomponent.js",
+            "url": "https://fabiopereira123.github.io/SACC/aps_webcomponent.js",
 			"integrity": "",
             "ignoreIntegrity" : true
 		}
