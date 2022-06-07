@@ -3,25 +3,24 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld4', class HelloWorld extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
 
 
 		constructor() {
-			super(); 
-			this._shadowRoot = this.attachShadow({mode: "open"});
+            super(); 
+            this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "Hello World";
-		}
-
+        }
+        
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
             this._firstConnection = true;
             this.redraw(); 
         }
-
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
         disconnectedCallback(){
         
