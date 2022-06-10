@@ -66,11 +66,7 @@
 			"body": "return this.headingType;",
 			"returnType": "string"
 		},
-		"getnumber": {
-			"description": "Get the hX tag of the KPI field",
-			"body": "this.widgetnumber = 'ten' ",
-			"returnType": "string"
-		},
+		
 	
 
 
