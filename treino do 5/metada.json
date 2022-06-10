@@ -42,7 +42,7 @@
 		"widgetnumber": {
 			"type": "string",
 			"description": "The text to be displayed in the widget",
-			"default" : "2"
+			"default" : "Okay"
 		}
 
 
@@ -68,7 +68,7 @@
 		},
 		"getnumber": {
 			"description": "Get the hX tag of the KPI field",
-			"body": "return this.widgetnumber = 'ten' ",
+			"body": "this.widgetnumber = 'ten' ",
 			"returnType": "string"
 		},
 	
