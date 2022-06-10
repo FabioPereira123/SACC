@@ -68,10 +68,10 @@
 		},
 		"getnumber": {
 			"description": "Get the hX tag of the KPI field",
-			"body": "return this.widgetnumber = '10'",
+			"body": "return this.widgetnumber = 'ten' ",
 			"returnType": "string"
-		}
-	},
+		},
+	
 
 
 
@@ -86,6 +86,7 @@
 			],
 			"body": "this.widgetText = newTextValue;"
 			},
+		
 
 
 			"setnum": {
@@ -98,6 +99,7 @@
 					}
 				],
 				"body": "this.widgetnumber = newnum;"
+			}
 				},
 			
 			
