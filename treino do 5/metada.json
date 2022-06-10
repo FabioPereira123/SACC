@@ -70,7 +70,8 @@
 			"description": "Get the hX tag of the KPI field",
 			"body": "return this.widgetnumber = '10'",
 			"returnType": "string"
-		},
+		}
+	},
 
 
 
@@ -97,9 +98,9 @@
 					}
 				],
 				"body": "this.widgetnumber = newnum;"
-				}
+				},
 			
-	},
+			
 	"events": {
 		"onClick": {
 			"description": "Called when the user clicks the Gauge"
