@@ -1,26 +1,15 @@
 (function() {
 	let template = document.createElement("template");
 	template.innerHTML = `
-		<form id="form">
-			<fieldset>
-				<legend>Custom Widget Text</legend>
-				<table>
-					<tr>
-						<td>Text</td>
-						<td><input id="aps_text" type="string"></td>
-					</tr>
-				</table>
-				</form>
-				</fieldset>
-				
-				<form id="form2">
-				<table >
-					<tr> <br>
-						<td>Text2</td>
-						<td><input id="aps_text2" type="string"></td>
-					</tr>
-				</table>
-			</form>
+		
+			<menu >
+			<li id="form"><button onclick="copy()"><input id="aps_text" type="string"></button></li>
+			
+			<li id="form2"><button onclick="paste()"><input id="aps_text2" type="string"></button></li>
+		  </menu>
+
+
+			
 		
 	`;
 
