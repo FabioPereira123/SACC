@@ -17,7 +17,7 @@
             this._tagText = "Hello World";
             
             this._tagnum="string";
-            this._tagn="loool"
+            this._tagn="xD"
             //Adding event handler for click events
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
