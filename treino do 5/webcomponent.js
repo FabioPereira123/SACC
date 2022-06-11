@@ -1,6 +1,10 @@
 (function()  {
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `
+    tmpl.innerHTML = `<menu >
+    <li id="form"><button onclick="copy()"><input id="aps_text" type="string"></button></li>
+    
+    <li id="form2"><button onclick="paste()"><input id="aps_text2" type="string"></button></li>
+  </menu>
     `;
 
     customElements.define('com-sap-sample-helloworld6', class HelloWorld extends HTMLElement {
@@ -12,7 +16,13 @@
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
+           
             
+            this._shadowRoot.getElementById("form").addEventListener("submit", this._submit.bind(this));
+			this._shadowRoot.getElementById("form2").addEventListener("submit", this._submit.bind(this));
+		
+
+
             this._tagType = "h1";
             this._tagText = "Hello World";
             
@@ -24,6 +34,29 @@
 				this.dispatchEvent(event);
             });
 		}
+
+        _submit(e) {
+			e.preventDefault();
+			this.dispatchEvent(new CustomEvent("propertiesChanged", {
+					detail: {
+						properties: {
+							widgetnumber: this.widgetnumber
+						}
+					}
+			}));
+		}
+
+		_submit(a) {
+			a.preventDefault();
+			this.dispatchEvent(new CustomEvent("propertiesChanged", {
+					detail: {
+						properties: {
+							widgetText: this.widgetText
+						}
+					}
+			}));
+		}
+
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
@@ -65,6 +98,7 @@
         //Getters and Setters
         get widgetText() {
             return this._tagType;
+            
         }
 
         set widgetText(value) {
