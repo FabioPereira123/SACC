@@ -42,7 +42,7 @@
 		"widgetnumber": {
 			"type": "string",
 			"description": "The text to be displayed in the widget",
-			"default" : "Okay"
+			"default" : "Okay "
 		}
 
 
