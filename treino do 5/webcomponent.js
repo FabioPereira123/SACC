@@ -93,7 +93,7 @@
         // End - Getters and Setters
 
         redraw(){
-            if (this._tagContainer && this._tagContainere){
+            if (this._tagContainer){
                 this._tagContainer.parentNode.removeChild(this._tagContainer);
               
             }
