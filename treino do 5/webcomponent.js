@@ -12,7 +12,7 @@
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
             this._tagContainer;
-            this._tagcontainere;
+            
             this._tagType = "h1";
             this._tagText = "Hello World";
             
@@ -95,23 +95,23 @@
         redraw(){
             if (this._tagContainer && this._tagContainere){
                 this._tagContainer.parentNode.removeChild(this._tagContainer);
-                this._tagContainere.parentNode.removeChild(this._tagContainere);
+              
             }
 
             var shadow = window.getSelection(this._shadowRoot);
             
           
             this._tagContainer = document.createElement(this._tagType);
-            this._tagContainere = document.createElement(this._tagnum);
+            this._tagContainer = document.createElement(this._tagnum);
 
             var theText = document.createTextNode(this._tagText);    
             var theTexte = document.createTextNode(this._tagn);    
-            this._tagContainere.appendChild(theTexte); 
+            this._tagContainer.appendChild(theTexte); 
           
             
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
-            this._shadowRoot.appendChild(this._tagContainere);
+            
 
 
         }

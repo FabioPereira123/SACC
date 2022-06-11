@@ -15,7 +15,7 @@
 				
 				<form id="form2">
 				<table >
-					<tr>
+					<tr> <br>
 						<td>Text2</td>
 						<td><input id="aps_text2" type="string"></td>
 					</tr>
