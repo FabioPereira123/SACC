@@ -1,9 +1,9 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `<menu >
-    <li id="form"><button onclick="copy()"><input id="aps_text" type="string"></button></li>
+    <li id="form"><input id="aps_text" type="string"></li>
     
-    <li id="form2"><button onclick="paste()"><input id="aps_text2" type="string"></button></li>
+    <li id="form2"><input id="aps_text2" type="string"></li>
   </menu>
     `;
 
