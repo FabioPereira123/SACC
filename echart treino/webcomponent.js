@@ -21,56 +21,49 @@ var getScriptPromisify = (src) => {
 		})
 		this._shadowRoot.appendChild(prepared.content.cloneNode(true))
   
-		this._root = this._shadowRoot.getElementById('root').addEventListener("submit", 
-		this._submit.bind(this));
-		 }
-		 _submit(e) {
-		 e.preventDefault();
-		 this.dispatchEvent(new CustomEvent("propertiesChanged", {
-		 detail: {
-		 properties: {
-		 color: this.color
-		 }
-		 }
-		 }));
-		
-  
-		this._props = {}
-  
-		this.render()
-
-
+		this._root = this._shadowRoot.getElementById('root');
 		this.addEventListener("click", event => {
 			var event = new Event("onClick");
 			this.dispatchEvent(event);
-			});
-		   
+		});	 
 		this._props = {};
-	  }
+		this.render()
+	}
+		
+		
+  
+		
+  
+		
+
+
+		
   
 	  onCustomWidgetResize(width, height) {
 		this.render();
-		this._props = {};
+		this._props = { ...this._props, ...changedProperties };
 	  }
 	  onCustomWidgetAfterUpdate(changedProperties) {
-		if ("color" in changedProperties) {
-		this.style["background-color"] = changedProperties["color"];
-		}
+		
+		
 		if ("opacity" in changedProperties) {
-		this.style["opacity"] = changedProperties["opacity"];
+			this.$opacity = changedProperties["opacity"];
 		}
+		
+		if ("color" in changedProperties) {
+			this.$color = changedProperties["color"];
+		}
+		
+		this.render(this.$value, this.$info, this.$color);
 	   }
 
-	   set color(newColor) {
-		this._shadowRoot.getElementById("styling_color").value = newColor;
-		}
-		get color() {
-		return this._shadowRoot.getElementById("styling_color").value;
-		}
+	   
   
 	  async render(value) {
 		await getScriptPromisify('https://fabiopereira123.github.io/SACC/echart/webcomponent.js')
-  
+	
+		
+		this.render(this.$value, this.$info, this.$color);
 		const chart = echarts.init(this._root, 'dark')
 		const option = {
 		  series: [{
