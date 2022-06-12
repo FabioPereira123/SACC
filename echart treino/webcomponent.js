@@ -21,7 +21,19 @@ var getScriptPromisify = (src) => {
 		})
 		this._shadowRoot.appendChild(prepared.content.cloneNode(true))
   
-		this._root = this._shadowRoot.getElementById('root')
+		this._root = this._shadowRoot.getElementById('root').addEventListener("submit", 
+		this._submit.bind(this));
+		 }
+		 _submit(e) {
+		 e.preventDefault();
+		 this.dispatchEvent(new CustomEvent("propertiesChanged", {
+		 detail: {
+		 properties: {
+		 color: this.color
+		 }
+		 }
+		 }));
+		
   
 		this._props = {}
   
@@ -48,6 +60,13 @@ var getScriptPromisify = (src) => {
 		this.style["opacity"] = changedProperties["opacity"];
 		}
 	   }
+
+	   set color(newColor) {
+		this._shadowRoot.getElementById("styling_color").value = newColor;
+		}
+		get color() {
+		return this._shadowRoot.getElementById("styling_color").value;
+		}
   
 	  async render(value) {
 		await getScriptPromisify('https://fabiopereira123.github.io/SACC/echart/webcomponent.js')
@@ -112,7 +131,7 @@ var getScriptPromisify = (src) => {
 					  height: '15%',
 					  borderRadius: 8,
 					  offsetCenter: [0, '-15%'],
-					  fontSize: 60,
+					  fontSize: 70,
 					  fontWeight: 'bolder',
 					  formatter:'${value}',
 					  color: 'color'
@@ -127,6 +146,7 @@ var getScriptPromisify = (src) => {
 		chart.setOption(option)
 	  }
 	}
+
   
 	customElements.define('com-sap-sample-echarts-gauge', SamplePrepared)
   })()
