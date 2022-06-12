@@ -60,7 +60,7 @@ var getScriptPromisify = (src) => {
 	   
   
 	  async render(value) {
-		await getScriptPromisify('https://fabiopereira123.github.io/SACC/echart/webcomponent.js')
+		await getScriptPromisify('https://fabiopereira123.github.io/SACC/echart treino/webcomponent.js')
 	
 		
 		this.render(this.$value, this.$info, this.$color);
