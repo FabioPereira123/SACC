@@ -50,7 +50,7 @@ var getScriptPromisify = (src) => {
 	   }
   
 	  async render(value) {
-		await getScriptPromisify('https://cdn.bootcdn.net/ajax/libs/echarts/5.0.0/echarts.min.js')
+		await getScriptPromisify('https://fabiopereira123.github.io/SACC/echart/webcomponent.js')
   
 		const chart = echarts.init(this._root, 'dark')
 		const option = {
