@@ -60,7 +60,7 @@ var getScriptPromisify = (src) => {
 				  startAngle: 200,
 				  endAngle: -20,
 				  min: 0,
-				  max: 60,
+				  max: 100,
 				  splitNumber: 12,
 				  itemStyle: {
 					  color: '#FFAB91'
@@ -96,7 +96,7 @@ var getScriptPromisify = (src) => {
 				  },
 				  axisLabel: {
 					  distance: -20,
-					  color: '#999',
+					  color: '#FFAB91',
 					  fontSize: 20
 				  },
 				  anchor: {
@@ -115,7 +115,7 @@ var getScriptPromisify = (src) => {
 					  fontSize: 60,
 					  fontWeight: 'bolder',
 					  formatter:'${value}',
-					  color: 'auto'
+					  color: 'color'
 				  },
 				  data: [{
 					  value: value?value:0
