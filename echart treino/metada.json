@@ -5,7 +5,7 @@
 	"license": "",
 	"id": "com.sap.sac.sample.echarts.gauge",
 	"version": "1.0.1",
-	"name": "ECharts Gauge",
+	"name": "ECharts Gauge2",
 	"newInstancePrefix": "EChartPrepared",
 	"description": "A sample custom widget wrapped EChart gauge",
 	"webcomponents": [
