@@ -1,0 +1,77 @@
+
+{
+	"eula": "",
+	"vendor": "Fabio Pereira",
+	"license": "",
+	"id": "com.sap.sac.sample.echarts.gauge",
+	"version": "1.0.1",
+	"name": "ECharts Gauge",
+	"newInstancePrefix": "EChartPrepared",
+	"description": "A sample custom widget wrapped EChart gauge",
+	"webcomponents": [
+	  {
+		"kind": "main",
+		"tag": "com-sap-sample-echarts-gauge",
+		"url": "https://fabiopereira123.github.io/SACC/echart/webcomponent.js",
+		"integrity": "",
+		"ignoreIntegrity": true
+	  }
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
+			},
+			"opacity": {
+			"type": "number",
+			"description": "Opacity",
+			"default": 3
+			},
+		   
+
+
+		  "width": {
+			  "type": "integer",
+			  "default": 350
+		  },
+		  "height": {
+			  "type": "integer",
+			  "default": 200
+		  },
+		  "value": {
+			"type": "integer",
+			"default": 20
+		}
+	},
+	"methods": {
+	  "render": {
+		"description": "Set Gauge value",
+		"parameters": [
+		  {
+			"name": "value",
+			"type": "number",
+			"description": "The new value"
+		  }
+		]
+	  },
+
+	  "setColor": {
+		"description": "Sets the background color.",
+		"parameters": [
+		{
+		"name": "newColor",
+		"type": "string",
+		"description": "The new background color"
+		}
+		]
+	}
+
+	},
+	"events": {
+
+		"onClick": {
+			"description": "Called when the user clicks the Colored Box."
+			}
+	}
+  }
