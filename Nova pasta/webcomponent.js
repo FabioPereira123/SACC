@@ -172,11 +172,7 @@
             this.firstConnection = true; 
 
 
-            setTimeout(() => {
-                process_txt.classList.add('active');
-            }, 0)
-    
-            setTimeout(toggleMsg, 1600);
+          
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
@@ -196,9 +192,7 @@
                     this.$value = changedProperties["value"];
                 }
                 
-                if ("info" in changedProperties) {
-                    this.$info = changedProperties["info"];
-                }
+               
                 
                 if ("color" in changedProperties) {
                     this.$color = changedProperties["color"];
