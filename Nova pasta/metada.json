@@ -38,6 +38,9 @@
 			"type": "integer",
 			"default": 100
 		}
+	
+
+
 	},
 	"methods": {
 		"setTotalBarWith": {
@@ -49,7 +52,7 @@
 					"description": "The displayed angle of the gauge"
 				}
 			],
-			"body": "this.totalbarWidth = newBarWith;"
+			"body": "this.width = newBarWith;"
 		},
 		"getColor": {
 			"returnType": "string",
