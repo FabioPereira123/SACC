@@ -54,17 +54,9 @@
 			"description": "The new value"
 		  }
 		]
-	  },
+	  
 
-	  "setColor": {
-		"description": "Sets the background color.",
-		"parameters": [
-		{
-		"name": "newColor",
-		"type": "string",
-		"description": "The new background color"
-		}
-		]
+	  
 	}
 
 	},
