@@ -144,7 +144,7 @@
 
     `;
 
-    class WidgetApp extends HTMLElement {
+    class Widget extends HTMLElement {
 
 		constructor() {
 			super(); 
@@ -229,5 +229,5 @@
 			this._totalbarWidth = value;
 		}
     };
-    customElements.define('com-sap-sample-widgetapp', WidgetApp);
+    customElements.define('com-sap-sample-widgetapp1', Widget);
 })();
