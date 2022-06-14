@@ -151,7 +151,7 @@
 			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this.firstConnection = false;
-            this._totalbarWidth=200;
+            this._Width=200;
             this.getcolor='';
             const process_txt = document.querySelector('.process');
             const success_txt = document.querySelector('.success');
@@ -221,12 +221,12 @@
 
        
 
-        get totalbarWidth() {
-			return this._totalbarWidth;
+        get Width() {
+			return this._Width;
 		}
 
-        set totalbarWidth(value) {
-			this._totalbarWidth = value;
+        set Width(value) {
+			this._Width = value;
 		}
     };
     customElements.define('com-sap-sample-widgetapp1', Widget);
