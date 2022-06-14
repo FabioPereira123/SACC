@@ -43,17 +43,7 @@
 
 	},
 	"methods": {
-		"setTotalBarWith": {
-			"description": "Set the text value of the widget",
-			"parameters": [
-				{
-					"name": "newBarWith",
-					"type": "number",
-					"description": "The displayed angle of the gauge"
-				}
-			],
-			"body": "this.width = newBarWith;"
-		},
+		
 		"getColor": {
 			"returnType": "string",
 			"description": "Returns the background color.",
