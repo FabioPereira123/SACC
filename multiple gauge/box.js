@@ -93,7 +93,7 @@
 		svg_circle_arc_path(x, y, radius, start_angle, end_angle) {
 		    var end_xy, start_xy;
 		    start_xy = this.polar_to_cartesian(x, y, radius, end_angle);
-		    end_xy = this.polar_to_cartesian(x, y, radius, start_angle);
+		    end_xy = this.polar_to_cartesian(x, y, radius , start_angle);
 		    return "M " + start_xy[0] + " " + start_xy[1] + " A " + radius + " " + radius + " 0 0 0 " + end_xy[0] + " " + end_xy[1];
 		  };
 		  
